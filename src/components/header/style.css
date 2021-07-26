@@ -1,0 +1,37 @@
+header {
+  background: var(--secundary-color);
+  box-shadow: black 0 -0.5rem 1rem;
+}
+
+header .container {
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+}
+
+header .menu {
+  width: 100%;
+}
+
+header .grid {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+header .icon-menu {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+header a {
+  color: #5f6163ad;
+}
+
+header img {
+  max-width: 3rem;
+  border-radius: 2rem;
+  border: 0.2rem var(--primary-color) solid;
+}

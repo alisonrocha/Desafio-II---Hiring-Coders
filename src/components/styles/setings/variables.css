@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* ===== VARIABLES ====== */
+:root {
+  --section-height: 74rem;
+
+  /* HSL color mode */
+
+  --primary-color: hsl(175 35% 49%);
+  --secundary-color: hsl(0 0% 100%);
+  --third-color: hsl(1 100% 63%);
+  --body-color: hsl(0 0% 95%);
+
+  /* fonts*/
+  --title-font-size: 1.875rem;
+  --text-font-size: 1.125rem;
+
+  --text-font: 'Roboto', sans-serif;
+}

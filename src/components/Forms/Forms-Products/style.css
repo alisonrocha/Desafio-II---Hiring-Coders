@@ -1,0 +1,59 @@
+#modal-forms {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#modal-forms .container-form {
+  text-align: center;
+  background: white;
+  width: 47.7rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 5rem 0px;
+  border: solid 1px #848a897a;
+  position: relative;
+}
+
+#modal-forms form {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+#modal-forms form input {
+  width: 25rem;
+  height: 2rem;
+  border: 0;
+  border-bottom: 3px solid var(--primary-color);
+  font-size: var(--title-font);
+  text-transform: lowercase;
+}
+
+#modal-forms form input:focus {
+  outline: none !important;
+  box-shadow: 0 0 2px #969898;
+}
+
+#modal-forms p {
+  padding: 1rem;
+}
+
+#modal-forms button {
+  background: var(--third-color);
+  border: 0;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+}
+
+#modal-forms button:hover {
+  background: #c51714;
+}
+
+#modal-forms .close {
+  position: absolute;
+  top: 1.7rem;
+  right: 0;
+  margin-right: 2.2rem;
+  font-size: 1.4rem;
+}

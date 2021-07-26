@@ -1,0 +1,48 @@
+body {
+  background: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.title {
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+
+.text {
+  font-weight: 300;
+  font-family: var(--text-font);
+}
+
+.text-descrition {
+  font: 300 var(--text-font);
+}
+
+.button-add {
+  width: 14rem;
+  text-align: center;
+}
+
+.button-add .toogle {
+  color: var(--body-color);
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 6.5rem;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

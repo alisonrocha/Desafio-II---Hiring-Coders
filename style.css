@@ -1,0 +1,7 @@
+@import url(./src/components/styles/setings/variables.css);
+
+@import url(./src/components/styles/setings/base.css);
+
+#root {
+  position: relative;
+}
