@@ -30,20 +30,23 @@ const $root = document.querySelector('#root')
 let urlAtual = location.href
 let a = new URL('/', urlAtual)
 
-console.log(a)
+let urlProdutos = a + 'produtos'
+let urlClientes = a + 'clientes'
+let urlFormCleintes = a + 'form-cadastrar-cliente'
+let urlFormProdutos = a + 'form-cadastrar-produto'
 
-if (urlAtual == a.href) {
+if (urlAtual === a.href) {
   $root.insertAdjacentHTML('afterbegin', $header + $menu + $cards)
-} else if (urlAtual == a + 'clientes') {
+} else if (urlAtual === urlClientes) {
   $root.insertAdjacentHTML('afterbegin', $header + $menu + $listClient)
-} else if (urlAtual == a + 'produtos') {
+} else if (urlAtual === urlProdutos) {
   $root.insertAdjacentHTML('afterbegin', $header + $menu + $listProduct)
-} else if (urlAtual == a + 'form-cadastrar-produto') {
+} else if (urlAtual === urlFormProdutos) {
   $root.insertAdjacentHTML(
     'afterbegin',
     $header + $menu + $formProduct + $modal
   )
-} else if (urlAtual == a + 'form-cadastrar-cliente') {
+} else if (urlAtual === urlFormCleintes) {
   $root.insertAdjacentHTML('afterbegin', $header + $menu + $formClient + $modal)
 }
 

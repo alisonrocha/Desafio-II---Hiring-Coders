@@ -6,8 +6,8 @@ function Header() {
       <nav class="container">             
         <div id="menu" class="menu">          
           <ul class="grid">
-            <li><a class="title" href="#home">email@administrador</a></li>
-            <li><img src="./assets/images/perfil.jpg"/></li>                    
+            <li><a class="title" href="#home">alisonrocha@administrador</a></li>
+            <li><span class="icon-person"></span></li>                    
           </ul>
         </div>     
         
