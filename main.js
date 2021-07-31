@@ -13,7 +13,7 @@ import {
   saveClients,
   saveProduct,
   closeModal
-} from './sistemadecadastro/src/components/functions/functions'
+} from '../sistemadecadastro/src/components/functions/functions'
 import Modal from './src/components/modal'
 
 const $header = Header()
