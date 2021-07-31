@@ -1,26 +1,19 @@
-#modal-forms {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#modal-forms .container-form {
+#form-client .container-form {
   text-align: center;
   background: white;
   width: 47.7rem;
   margin: 0 auto;
   margin-top: 3rem;
-  padding: 5rem 0px;
+  padding: 2rem 0px;
   border: solid 1px #848a897a;
-  position: relative;
 }
 
-#modal-forms form {
+#form-client form {
   display: grid;
   grid-gap: 1.5rem;
 }
 
-#modal-forms form input {
+#form-client form input {
   width: 25rem;
   height: 2rem;
   border: 0;
@@ -29,27 +22,29 @@
   text-transform: lowercase;
 }
 
-#modal-forms form input:focus {
+#form-client form input:focus {
   outline: none !important;
   box-shadow: 0 0 2px #969898;
 }
 
-#modal-forms p {
+#form-client p {
   padding: 1rem;
 }
 
-#modal-forms button {
-  background: var(--third-color);
-  border: 0;
-  color: white;
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
-}
-
-#modal-forms .close {
+#form-client .close {
   position: absolute;
   top: 1.7rem;
   right: 0;
   margin-right: 2.2rem;
   font-size: 1.4rem;
+}
+
+@media (max-width: 780px) {
+  #form-client .container-form {
+    width: 21rem;
+  }
+
+  #form-client form input {
+    width: 17rem;
+  }
 }

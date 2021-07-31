@@ -1,0 +1,83 @@
+#list-client {
+  padding: 1.4rem 0;
+}
+
+.title-list {
+  display: flex;
+  background-color: white;
+}
+
+.title-list .title {
+  width: 100%;
+}
+
+.title-list .end {
+  text-align: end;
+}
+
+#list-client .title {
+  background: white;
+  padding: 1.5rem;
+}
+
+#list-client .table {
+  margin: 1rem 0;
+  overflow: auto;
+  height: 22rem;
+}
+
+.table::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table::-webkit-scrollbar-track {
+  background-color: var(--third-color);
+  border-radius: 20px;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+#list-client table {
+  width: 100%;
+  border-spacing: 5px;
+}
+
+#list-client table th {
+  background: white;
+  padding: 0.8rem 0;
+  border-left: solid 5px #f2f2f2;
+  border-right: solid 5px #f2f2f2;
+}
+
+#list-client table tr {
+  text-align: center;
+}
+
+#list-client table td {
+  background: white;
+  padding: 1rem 0;
+  padding: 1rem 0;
+  border-right: solid 5px #f2f2f2;
+  border-left: solid 5px #f2f2f2;
+  border-top: solid 5px #f2f2f2;
+}
+
+#list-client .arrow {
+  padding: 0.4rem;
+}
+
+#list-client span {
+  color: var(--third-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+#listt-product .arrow a {
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+}

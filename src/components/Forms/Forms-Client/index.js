@@ -1,43 +1,40 @@
 import './style.css'
 
-function FormsClient() {
+function FormClient() {
   return `
-  <div id="modal-forms" class="modal-forms-client">    
-      <div class="container-form">  
-        <div id="closeModa" class="close title">
-          x
-        </div>    
+  <div id="form-client" class="modal-forms-client">    
+      <div class="container-form">         
         <div class="title">
           <p>
             Preencha os dados
           </p>        
         </div>
         <div>
-          <form id="form">
+          <form id="formClient" action="">        
             <div>
-              <input type="text" id="name" placeholder="Nome*:" required />
+              <input type="text" id="name" placeholder="Nome*:"  autocomplete="off" required />
             </div>
             <div>
-              <input type="text" id="cpf" placeholder="CPF*:" required/>
+              <input type="text" id="cpf" placeholder="CPF*:"  autocomplete="off" required/>
             </div>
             <div>
-              <input type="text" id="endereco" placeholder="Endereço*:" required/>
+              <input type="text" id="address" placeholder="Endereço*:"  autocomplete="off" required/>
             </div>
             <div>
-              <input type="email" id="email" placeholder="E-mail*:" required/>
+              <input type="email" id="email" placeholder="E-mail*:"  autocomplete="off"  required/>
             </div>
             <div>
-              <input type="phone" id="telefone" placeholder="Telefone*:" required/>
+              <input type="phone" id="phone" placeholder="Telefone*:"  autocomplete="off"  required/>
             </div>
             <div class="button">
-              <button id="submit" type="submit">Cadastrar</button>
+              <button id="submitClient" type="submit">Cadastrar</button>
             </div>
           </form>
-        </div>
+         </div>
       </div>
     </div>
   </div>  
   `
 }
 
-export default FormsClient
+export default FormClient

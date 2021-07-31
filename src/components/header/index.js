@@ -3,8 +3,7 @@ import './style.css'
 function Header() {
   return `
     <header id="header">
-      <nav class="container">
-        <div id="open" class="toggle icon-menu"></div>        
+      <nav class="container">             
         <div id="menu" class="menu">          
           <ul class="grid">
             <li><a class="title" href="#home">email@administrador</a></li>

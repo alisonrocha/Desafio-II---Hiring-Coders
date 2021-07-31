@@ -2,29 +2,26 @@ import './style.css'
 
 function FormsProducts() {
   return `
-  <div id="modal-forms" class="modal-forms-client">    
-      <div class="container-form">  
-        <div id="closeModal" class="close title">
-          x
-        </div>    
+  <div id="form-product" class="modal-forms-client">    
+      <div class="container-form">   
         <div class="title">
           <p>
             Preencha os dados
           </p>        
         </div>
         <div>
-          <form id="form">
+          <form id="formProduct">
             <div>
-              <input type="text" id="categoria" placeholder="categoria*:" required />
+              <input type="text" id="categoria" placeholder="categoria*:"  autocomplete="off" required />
             </div>
             <div>
-              <input type="text" id="nome" placeholder="nome do produto*:" required/>
+              <input type="text" id="nome" placeholder="nome do produto*:"  autocomplete="off" required/>
             </div>
             <div>
-              <input type="number" id="quantidade" placeholder="Quantidade em Estoque*:" required/>
+              <input type="number" id="quantidade" placeholder="Quantidade em Estoque*:"  autocomplete="off" required/>
             </div>            
             <div class="button">
-              <button id="submit" type="submit">Cadastrar</button>
+              <button id="submitProduct" type="submit">Cadastrar</button>
             </div>
           </form>
         </div>

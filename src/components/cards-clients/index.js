@@ -1,30 +1,49 @@
 import './style.css'
 
-function CardClients() {
+function Card() {
+  //Recupera os dados armazenados
+  var tbProducts = localStorage.getItem('tbProducts')
+  var tbClients = localStorage.getItem('tbClients')
+
+  // Converte string para objeto
+  tbProducts = JSON.parse(tbProducts)
+  tbClients = JSON.parse(tbClients)
+
+  // Caso não haja conteúdo, iniciamos um vetor vazio
+  if (tbProducts == null) {
+    tbProducts = []
+  }
+
+  if (tbClients == null) {
+    tbClients = []
+  }
+
   return `
-  <div class="card container">  
-    <div class="title">         
-      Últimos Produtos Cadastrados
-    </div>  
-    <div id="card">
-      <div  class="body">      
-        <div class="category text">
-          <span>Long Neck</span>
-        </div>
-        <div class="img-card">
-          <img src="./../assets/images/cerveja.png">
-        </div>
-        <div class="description text">
-          <span class="title">Cerveja Heineken</span>
-          </br>
-          Valor 
-          </br>
-          Qtd. 5      
+  <div class="container">  
+    <div class="container-card">
+      <div class="card">
+        <div class="body">
+          <div class="number title">
+            ${tbProducts.length}
+          </div>
+          <div class="descrition title">
+            Quantidade de Produtos Cadastrados
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="card">
+        <div class="body">
+          <div class="number title">
+          ${tbClients.length}
+          </div>
+          <div class="descrition title">
+            Quantidade de Produtos Cadastrados
+          </div>
+        </div>
+      </div>     
+    </div>   
+  <div>    
   `
 }
 
-export default CardClients
+export default Card
